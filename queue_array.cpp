@@ -18,6 +18,11 @@ class queues
    end_index = 0;
    max_size = length;
  }
+ 
+ ~queues()
+ {
+   delete[] array;
+ }
 
  void enqueue(int element)
  {
